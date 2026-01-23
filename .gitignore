@@ -60,9 +60,9 @@ TP1/outputs/*
 # =========================
 # Fichiers temporaires OpenCV
 # =========================
-*.png
-*.jpg
-*.jpeg
+# *.png
+# *.jpg
+# *.jpeg
 
 # =========================
 # Cache CUDA / Torch

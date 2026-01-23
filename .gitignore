@@ -1,0 +1,71 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# =========================
+# Environnements
+# =========================
+.env
+.venv
+venv/
+ENV/
+env/
+
+# =========================
+# Jupyter / Streamlit
+# =========================
+.ipynb_checkpoints/
+.streamlit/
+
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# SAM / ML — FICHIERS LOURDS
+# =========================
+# Checkpoints modèles (ne JAMAIS pousser)
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# =========================
+# Données & sorties générées
+# =========================
+TP1/data/images/*
+!TP1/data/images/.gitkeep
+
+TP1/outputs/*
+!TP1/outputs/.gitkeep
+
+# =========================
+# Fichiers temporaires OpenCV
+# =========================
+*.png
+*.jpg
+*.jpeg
+
+# =========================
+# Cache CUDA / Torch
+# =========================
+.cache/
+torch_cache/

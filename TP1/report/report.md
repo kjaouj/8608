@@ -62,6 +62,8 @@ Le chargement du modèle et l’inférence fonctionnent correctement sur GPU. La
 | stephanie-harvey-T0inbt7nRME-unsplash.jpg | 0.955 | 1 819 244 | 12 313.35 |
 | matthew-ball-2L11W39hDYo-unsplash.jpg | 0.979 | 6 240 048 | 10 185.95 |
 | jonathan-borba-af7c0GwLsGU-unsplash.jpg | 0.921 | 1 706 161 | 15 396.56 |
+
+
 L'overlay est particulièrement utile pour le débogage du comportement du modèle et de la définition du prompt. Elle permet de vérifier immédiatement que le cadre de délimitation couvre correctement l'objet cible et n'inclut pas d'arrière-plan excessif. Dans les cas simples, la superposition affiche un alignement précis entre le masque et les contours de l'objet, confirmant ainsi une segmentation stable. Dans les cas plus complexes, comme pour les objets aux structures fines ou proches de l'arrière-plan, la superposition révèle des fuites de masque ou des zones manquantes qui ne sont pas visibles à partir du seul score. Ce retour visuel aide à déterminer si les erreurs proviennent d'un cadre de délimitation imprécis, des limitations du modèle ou des caractéristiques de l'image. En définitive, la superposition est un outil essentiel pour comprendre la qualité de la segmentation au-delà des simples mesures numériques.
 
 # Exercice 5 :
@@ -91,13 +93,16 @@ L'overlay est particulièrement utile pour le débogage du comportement du modè
 ![Capture API](img/Pasted%20image%2020260123131500.png)
 ![Capture API](img/Pasted%20image%2020260123131429.png)
 
-![Capture API](img/Pasted%20image%2020260123131637.png)![Capture API](img/Pasted%20image%2020260123131646.png)
+![Capture API](img/Pasted%20image%2020260123131637.png)
+![Capture API](img/Pasted%20image%2020260123131646.png)
 
 | Image (case)                       | Score | Area (px) | Perimeter (px) | Time (ms) | bbox(x1, y1, x2, y2)   |
 | ---------------------------------- | ----- | --------- | -------------- | --------- | ---------------------- |
 | lye-clicks-9jXJluGUhew-unsplash    | 1.004 | 8,523,577 | 11,709.37      | 1,460.5   | (4797, 94, 7546, 3920) |
 | raul-angel-QLhbqCx_YdM-unsplash    | 0.991 | 2,102,132 | 6,400.81       | 151.4     | (421, 991, 2294, 2994) |
 | chromatograph-R-xqhYU4ZKs-unsplash | 0.621 | 1,557,105 | 33,521.77      | 1,880.3   | (0, 417, 4200, 2354)   |
+
+
 Lorsque le bounding box  est trop petite, SAM risque de ne segmenter qu'une partie de l'objet ou d'omettre des zones importantes, ce qui entraîne des masques incomplets et des scores instables. En agrandissant la boîte englobante, le modèle dispose de plus de contexte et produit généralement des segmentations plus complètes, mais peut également inclure des zones d'arrière-plan, notamment dans les scènes complexes. Des boîtes très grandes ont tendance à accroître l'ambiguïté et peuvent provoquer des débordements de masque sur les objets voisins. L'aperçu en direct de la boîte englobante permet de détecter ces problèmes avant la segmentation. Ajuster la taille de la boîte englobante est donc un outil de débogage essentiel pour trouver le bon équilibre entre exhaustivité et précision de la segmentation.
 
 # Exercice 6 :

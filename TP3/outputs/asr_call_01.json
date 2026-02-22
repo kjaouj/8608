@@ -1,0 +1,95 @@
+{
+  "audio_path": "TP3/data/call_01.wav",
+  "model_id": "openai/whisper-base",
+  "device": "cuda",
+  "audio_duration_s": 34.632,
+  "elapsed_s": 1.776702642440796,
+  "rtf": 0.05130234010281809,
+  "segments": [
+    {
+      "segment_id": 0,
+      "start_s": 2.082,
+      "end_s": 3.902,
+      "text": "Thank you for calling customer support."
+    },
+    {
+      "segment_id": 1,
+      "start_s": 4.258,
+      "end_s": 5.374,
+      "text": "My name is Alex."
+    },
+    {
+      "segment_id": 2,
+      "start_s": 5.73,
+      "end_s": 6.814,
+      "text": "and I will help you today."
+    },
+    {
+      "segment_id": 3,
+      "start_s": 7.458,
+      "end_s": 9.63,
+      "text": "I'm calling the botanowder to arrive damaged."
+    },
+    {
+      "segment_id": 4,
+      "start_s": 9.986,
+      "end_s": 11.806,
+      "text": "The package was delivered yesterday."
+    },
+    {
+      "segment_id": 5,
+      "start_s": 12.162,
+      "end_s": 13.278,
+      "text": "but the screen is correct."
+    },
+    {
+      "segment_id": 6,
+      "start_s": 13.89,
+      "end_s": 17.022,
+      "text": "I would like to refund or replacement as soon as possible."
+    },
+    {
+      "segment_id": 7,
+      "start_s": 17.506,
+      "end_s": 19.55,
+      "text": "The order number is AX."
+    },
+    {
+      "segment_id": 8,
+      "start_s": 19.81,
+      "end_s": 20.51,
+      "text": "One nine."
+    },
+    {
+      "segment_id": 9,
+      "start_s": 20.674,
+      "end_s": 21.47,
+      "text": "7-3"
+    },
+    {
+      "segment_id": 10,
+      "start_s": 22.946,
+      "end_s": 25.438,
+      "text": "You can reach me at jonder.smith.com"
+    },
+    {
+      "segment_id": 11,
+      "start_s": 25.922,
+      "end_s": 27.39,
+      "text": "uh... example dot com"
+    },
+    {
+      "segment_id": 12,
+      "start_s": 28.066,
+      "end_s": 30.686,
+      "text": "Also my phone number is 555."
+    },
+    {
+      "segment_id": 13,
+      "start_s": 31.042,
+      "end_s": 31.678,
+      "text": "Oh, one."
+    }
+  ],
+  "full_text": "Thank you for calling customer support. My name is Alex. and I will help you today. I'm calling the botanowder to arrive damaged. The package was delivered yesterday. but the screen is correct. I would like to refund or replacement as soon as possible. The order number is AX. One nine. 7-3 You can reach me at jonder.smith.com uh... example dot com Also my phone number is 555. Oh, one."
+}

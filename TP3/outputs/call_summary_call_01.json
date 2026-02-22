@@ -1,0 +1,62 @@
+{
+  "audio_path": "TP3/data/call_01.wav",
+  "model_id": "openai/whisper-base",
+  "device": "cuda",
+  "audio_duration_s": 34.632,
+  "elapsed_s": 1.776702642440796,
+  "rtf": 0.05130234010281809,
+  "pii_stats": {
+    "emails": 0,
+    "phones": 0,
+    "orders": 1
+  },
+  "intent_scores": {
+    "refund_or_replacement": 3,
+    "delivery_issue": 5,
+    "general_support": 5
+  },
+  "intent": "delivery_issue",
+  "top_terms": [
+    [
+      "calling",
+      2
+    ],
+    [
+      "order",
+      2
+    ],
+    [
+      "number",
+      2
+    ],
+    [
+      "com",
+      2
+    ],
+    [
+      "thank",
+      1
+    ],
+    [
+      "customer",
+      1
+    ],
+    [
+      "support",
+      1
+    ],
+    [
+      "name",
+      1
+    ],
+    [
+      "alex",
+      1
+    ],
+    [
+      "will",
+      1
+    ]
+  ],
+  "redacted_text": "thank you 4 calling customer support.my name is alex.and i will help you today.im calling the botanowder 2 arrive damaged.the package was delivered yesterday.but the screen is correct.i would like 2 refund or replacement as soon as possible.the order number is [REDACTED_ORDER]@jonder.smith.com uh example.com also my phone number is 555.0, 1."
+}

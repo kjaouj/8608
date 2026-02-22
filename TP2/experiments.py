@@ -71,11 +71,11 @@ def run_img2img_experiments() -> None:
 
     # Image source (produit e-commerce)
     # À placer dans TP2/inputs/
-    init_path = "inputs/product_backpack.png"
+    init_path = "inputs/Untitled.jpg"
 
     # Prompt e-commerce (doit rester identique pour les 3 runs)
     prompt = (
-        "ultra-realistic e-commerce product photo of a modern backpack, "
+        "ultra-realistic photo of an apple, "
         "white background, studio lighting, soft natural shadow, "
         "high detail, sharp focus, professional product photography"
     )
@@ -132,7 +132,7 @@ def main() -> None:
     steps = 30
     guidance = 7.5
 
-    prompt = "ultra-realistic product photo of a backpack on a white background, studio lighting, soft shadow, very sharp"
+    prompt = "ultra-realistic photo of an apple on a white background, studio lighting, soft shadow, very sharp"
     negative = "text, watermark, logo, low quality, blurry, deformed"
 
     pipe = load_text2img(model_id, scheduler_name)
@@ -150,7 +150,7 @@ def main() -> None:
     )
 
     img = out.images[0]
-    save(img, "outputs/baseline.png")
+    save(img, "outputs/baseline2.png")
 
     print("OK saved outputs/baseline.png")
     print("CONFIG:", {"model_id": model_id, "scheduler": scheduler_name, "seed": seed, "steps": steps, "guidance": guidance})

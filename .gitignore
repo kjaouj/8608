@@ -69,3 +69,6 @@ TP1/outputs/*
 # =========================
 .cache/
 torch_cache/
+
+
+TP4/runs/
